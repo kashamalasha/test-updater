@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Electron 22.3.8</title>
+  </head>
+  <body>
+    <h1>Try to drag me 👋 <span id="app-version"></span></h1>
+    <main>
+      <section>
+        <h2>Environment</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>Node.js: </td>
+              <td><span id="node-version"></span></td>
+            </tr>
+            <tr>
+              <td>Chromium: </td>
+              <td><span id="chrome-version"></span></td>
+            </tr>
+            <tr>
+              <td>Electron: </td>
+              <td><span id="electron-version"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Try to push the button</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td><button id="handle">🕹️</button></td>
+              <td>Manipulate DOM</td>
+            </tr>
+            <tr>
+              <td><button id="exit">❌</button></td>
+              <td>Close the app</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>DOM manipulation result:</h2>
+        <p id="result"></p>
+      </section>
+    </main>
+    <script src="./renderer.js"></script>
+  </body>
+  <template></template>
+</html>
